@@ -1,0 +1,107 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .hat{
+    display: flex;
+  }
+
+  .diamond {
+    position: relative;
+    width: 3.2vw;
+    height: 2.8vw;
+    margin-left: 4.9vw;
+    transform:  rotate(-30deg) skew(30deg);
+    border: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .l_line{
+    position: absolute;
+    margin-left: 4.9vw;
+    margin-top: 2.6vw;
+    width: 7vw;
+    height: 1.8vw;
+    border-left: 0.5vw solid black;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .worm{
+    position: absolute;
+    margin-left: 11.7vw;
+    margin-top: 4.4vw;
+    width: 1vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .vert_line{
+    position: absolute;
+    margin-left: 8.7vw;
+    margin-top: 2.82vw;
+    height: 1.3vw;
+    border-left: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .short_line{
+    position: absolute;
+    margin-left: 0.9vw;
+    margin-top: 4.4vw;
+    width: 3.5vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .left_short_line{
+    position: absolute;
+    margin-left: 0.4vw;
+    margin-top: 5.3vw;
+    width: 4.6vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .left_long_line{
+    position: absolute;
+    margin-top: 6.2vw;
+    width: 5.8vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .right_short_line{
+    position: absolute;
+    margin-left: 8.7vw;
+    margin-top: 5.3vw;
+    width: 4.6vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .right_long_line{
+    position: absolute;
+    margin-left: 7.8vw;
+    margin-top: 6.2vw;
+    width: 6.1vw;
+    border-bottom: 0.5vw solid black;
+    border-radius: 0.5vw;
+  }
+
+  .radius {
+    position: absolute;
+    width: 2vw;
+    height: 1vw;
+    margin-left: 5.3vw;
+    margin-top: 5.1vw;
+    border-radius: 2vw 2vw 0 0;
+    border-top: 0.5vw solid black;
+    border-left: 0.5vw solid black;
+    border-right: 0.5vw solid black;
+  }
+
+
+
+  
