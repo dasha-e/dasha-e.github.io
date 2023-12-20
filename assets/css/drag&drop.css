@@ -1,0 +1,20 @@
+.basket{
+    width: 25vw;
+    height: 55vh;
+    border: 1px solid black;
+    margin: 15px auto;
+    position: relative;
+}
+
+.background{
+    height: 100%;
+}
+
+.basket_row{
+    display: flex;
+}
+
+.element{
+    height: 7vw;
+    width: auto;
+}

@@ -1,0 +1,153 @@
+.block_title{
+    display: inline;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.field{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    background-image: url(../images/ware1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.field:hover{
+    background-image: url(../images/ware2.jpg);
+    transition-duration: 1s;
+}
+
+
+.pot{
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 40px;
+    background-image: url(../images/ware3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.pot-lid{
+    position: absolute;
+    opacity: 0;
+    width: 65px;
+    height: 65px;
+    margin-top: 57px;
+    margin-left: 50px;
+    background-image: url(../images/ware4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.field:active .pot-lid{
+    animation: slap 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+
+.field:hover .pot{
+    animation: go-big-small 3s ease-in-out;
+    opacity: 1;
+}
+
+.shop-name{
+    opacity: 0;
+    position: relative;
+    font-size: smaller;
+    left: 60px;
+}
+
+.field:hover .shop-name{
+    opacity: 1;
+    transition: 3s;
+}
+
+.tagline{
+    opacity: 0;
+    position: absolute;
+    color: red;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 3;
+}
+
+.field:active .tagline{
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 0.2s;
+}
+
+.field:active .pot
+{
+    animation: shake 0.2s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes go-big-small {  
+    0% {
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
+
+@keyframes slap {
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+        transform-origin: right;
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(-35deg);
+        transform-origin: right;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(30deg);
+        transform-origin: right;
+    }
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    33%{
+        transform: translate(3px, 0px);
+    }
+    66%{
+        transform: translate(-3px, 0px);
+    }
+    100%{
+        transform: translate(-3px, 0px);
+    }
+}

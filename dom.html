@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/sub_style.css">
-    <link rel="stylesheet" href="assets/css/pots.css">
+    <link rel="stylesheet" href="assets/css/dom.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Syne:wght@700&display=swap" rel="stylesheet">
-    <title>Flexbox</title>
+    <title>Dom</title>
 </head>
 
 <body>
@@ -17,35 +17,24 @@
                 <a href="index.html#Assignments"><img src="assets/images/lilarrow_back.svg" alt=""></a>
                 <a href="index.html#Assignments" class="header__back__link">Back</a>
             </div>
-            <div class="block_title">
-                <div class="header__title">Flexbox</div>
-            </div>
-        </div>
-
+            <div class="header__title">DOM</div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <div class="background"></div>
-            <div class="box">
-                <div class="field">
-                    <div class="shop-name">
-                        <b>
-                            Магазин "Поварёнок"
-                        </b>
-                    </div>
-                    <div class="tagline">
-                        <b>
-                            Жаропрочная посуда
-                        </b>
-                    </div>
-                    <div class="pot-lid"></div>
-                    <div class="pot"></div>
+            <div class="background">
+                <div class="buttons">
+                    <button id="add-phrase" onclick="add()">Создать</button>
+                    <button id="bold-even-phrases" onclick="boldEven()">Перекрасить четные</button>
                 </div>
+
+                <div id="rand"></div>
+
             </div>
         </div>
     </main>
+    <script type="text/javascript" src="assets/js/dom.js"></script>
 </body>
 
 </html>

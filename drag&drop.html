@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/sub_style.css">
+    <link rel="stylesheet" href="assets/css/drag&drop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Syne:wght@700&display=swap" rel="stylesheet">
+    <title>Drag & Drop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html#Assignments"><img src="assets/images/lilarrow_back.svg" alt=""></a>
+                <a href="index.html#Assignments" class="header__back__link">Back</a>
+            </div>
+            <div class="header__title">Drag & Drop</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="background">
+                <div class="basket_row">
+                    <div id="basket1" class="basket" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="1" type="ins" src="assets/images/bee.png" class="element" onclick="rotateImage(event)">
+                        <img id="2" type="animal" src="assets/images/cow.png" class="element" onclick="rotateImage(event)">
+                        <img id="3" type="bird" src="assets/images/chick.png" class="element" onclick="rotateImage(event)">
+                    </div>
+                    <div id="basket2"class="basket" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="4" type="ins" src="assets/images/worm.png" style="width: 8vw; height: auto;" class="element" onclick="rotateImage(event)">
+                        <img id="5" type="animal" src="assets/images/horse.png" class="element" onclick="rotateImage(event)">
+                    </div>
+                    <div id="basket3" class="basket" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="6" type="animal" src="assets/images/pig.png" class="element" onclick="rotateImage(event)">
+                        <img id="7" type="bird" src="assets/images/chicken.png" class="element" onclick="rotateImage(event)">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="assets/js/drag&drop.js"></script>
+</body>
+
+</html>
