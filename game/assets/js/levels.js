@@ -1,6 +1,6 @@
-// document.addEventListener('contextmenu', (event) => {
-//     event.preventDefault(); // Отмена стандартного поведения
-// });
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault(); // Отмена стандартного поведения
+});
 
 // Определение списка картинок
 const path = 'assets/images/';
