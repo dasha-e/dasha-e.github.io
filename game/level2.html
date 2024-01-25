@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/levels.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <header>
+        <div class="title">Хитростность: Затейливо</div>
+        <h1 class="title" id="timer">04:00</h1>
+    </header>
+    <main>
+        <div id="task"></div>
+        <div id="imageContainer" ondrop="drop(event)" ondragover="allowDrop(event)" style="height: 120px;">        
+            <img id="image1" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image2" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image3" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image4" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image5" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image6" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image7" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image8" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+            <img id="image9" class="dnd" src="assets/images/void.png" onclick="rotateImage(event)">
+        </div>
+        <div id="imageBasket" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="level_buttons">
+            <button class="button" onclick="window.location.href = 'level1.html'">Обратно</button>
+            <button class="button" onclick="window.location.reload()">Заново</button>
+            <button class="button" id="checkButton">Проверить</button>
+            <button class="button" onclick="nextLevel('level3.html')">Дальше</button>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="assets/js/levels.js"></script>
+<script type="text/javascript" src="assets/js/level2.js"></script>
+
+</html>

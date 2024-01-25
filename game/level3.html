@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/levels.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <header>
+        <div class="title">Хитростность: Тяжко</div>
+        <h1 class="title" id="timer">03:00</h1>
+    </header>
+    <main>
+        <div id="task"></div>
+        <div id="imageContainer" style="margin-top: 200px; height: 150px;"></div>
+        <div class="level_buttons">
+            <button class="button" onclick="window.location.href = 'level2.html'">Обратно</button>
+            <button class="button" onclick="window.location.reload()">Заново</button>
+            <button class="button" onclick="getHelp()">Подсказка</button>
+            <button class="button" onclick="toMenu()">Меню</button>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="assets/js/levels.js"></script>
+<script type="text/javascript" src="assets/js/level3.js"></script>
+
+</html>

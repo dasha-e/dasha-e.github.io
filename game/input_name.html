@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu_container">
+        <div class="scrolls">
+            <div id="scrolling-image"></div>
+            <div id="scrolling-image"></div>
+        </div>
+        <div class="menu_back"></div>
+    </div>
+    <header>
+        <div class="title" style="font-size: 5vw;">Впишите ваше имя</div>
+    </header>
+
+    <main>
+        <div class="menu">
+            <input type="text" id="playerName" />
+            <button class="input_button" onclick="savePlayerName()">Сохранить имя в летописях</button>
+        </div>
+        <button class="back_button" onclick="window.location.href = 'game_menu.html'">Обратно</button>
+    </main>
+
+    <script>
+        function savePlayerName() {
+            var playerName = document.getElementById("playerName").value;
+            if (playerName !== "") {
+                if (!localStorage.getItem(playerName)){
+                    localStorage.setItem(playerName, 0);
+                }
+                window.location.href = "level1.html";
+            } else{
+                alert("Имя не может быть пустым!");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

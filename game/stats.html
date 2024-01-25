@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <title>Счёт</title>
+</head>
+
+<body>
+    <div class="menu_container">
+        <div class="scrolls">
+            <div id="scrolling-image"></div>
+            <div id="scrolling-image"></div>
+        </div>
+        <div class="menu_back"></div>
+    </div>
+    <header>
+        <div class="title">Счёт</div>
+    </header>
+
+    <main>
+        <div class="menu">
+            <ol id="itemsList"></ol>
+        </div>
+        
+        <button class="back_button" onclick="window.location.href = 'game_menu.html'">Обратно</button>
+        <button class="back_button" id="clear" onclick="localStorage.clear(); window.location.reload()">Очистить</button>
+    </main>
+    <script>
+        // Функция для вывода элементов из localStorage
+        function displayItems() {
+            var localStorageKeys = Object.keys(localStorage); // Получаем все ключи из localStorage
+            var itemsList = document.getElementById("itemsList");
+
+            // Сортируем ключи в порядке возрастания значения value
+            localStorageKeys.sort(function (a, b) {
+                return localStorage.getItem(b) - localStorage.getItem(a);
+            });
+
+            // Выводим элементы на страницу
+            for (var i = 0; i < localStorageKeys.length; i++) {
+                var key = localStorageKeys[i];
+                var value = localStorage.getItem(key);
+
+                var listItem = document.createElement("li");
+                listItem.innerHTML = (i + 1) + ". &nbsp;&nbsp; <span class='oldText'>"+key+"</span> &nbsp;&nbsp; — &nbsp;&nbsp;" + value + "&nbsp;&nbsp;";
+
+                var listItemNumber = document.createElement("span");
+                listItemNumber.textContent = i + 1;
+
+                itemsList.appendChild(listItem);
+            }
+        }
+
+        // Вызов функции при загрузке страницы
+        window.onload = function () {
+            displayItems();
+        };
+    </script>
+
+</body>
+
+</html>
