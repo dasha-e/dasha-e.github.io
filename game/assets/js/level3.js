@@ -88,6 +88,7 @@ function getHelp(){
             alert("Подсказка: " + femaleNames[secret] +" не желтая.");
         }
     }
+    help--;
     alert("Осталось подсказок: " + help);
 }
 

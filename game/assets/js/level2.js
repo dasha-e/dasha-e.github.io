@@ -94,7 +94,7 @@ var startPos = getRandomInt(0, 7);
 var amount = getRandomInt(0, 2);
 var amountOf = [3, 5, 9];
 var colorPhraseElement = document.getElementById("task");
-colorPhraseElement.innerHTML = "Расположите в сром поле <span class='numb'>" + amountOf[amount] + "</span> матрешек как будто они кувыркаются, начиная с позиции <span class='numb'>" + rotations[startPos] + "</span> градусов до нее же с равным шагом.";
+colorPhraseElement.innerHTML = "Расположите в сером поле <span class='numb'>" + amountOf[amount] + "</span> матрешек как будто они кувыркаются, начиная с позиции <span class='numb'>" + rotations[startPos] + "</span> градусов до нее же с равным шагом.";
 
 function getRotationAngle(element) {
     var style = window.getComputedStyle(element);
